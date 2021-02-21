@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
-import Allumette from './allumette';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './App.css';
 import Ia from './Ia';
 import Accueil from './Accueil';
+import plateau from './plateau';
 
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
                   };
   }
   myChangeHandler3=(event)=>{
-    this.setState({selectChart: event.target.value})
+    this.setState({selectNiv: event.target.value})
 
   }
   render() {
@@ -28,7 +28,7 @@ class App extends Component {
         </header>
         <Router>
         <Route path="/" exact component={Accueil} />
-        {/* <Route path="/" exact component={Accueil}/> */}
+        <Route path="/plateau" exact component={plateau}/>
         <Route path="/Ia" exact component={Ia} />
       </Router>
       </div>

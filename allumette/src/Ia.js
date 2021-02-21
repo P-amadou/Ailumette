@@ -17,7 +17,7 @@ class Ia extends React.Component{
     <div>
       <h1>IA niveau</h1>
       <p>Choisir le niveau de diificulté</p>
-      <select id="selectChart"  value={this.state.selectChart} onChange={this.myChangeHandler3}>
+      <select id="selectChart"  value={this.state.selectNiv} onChange={this.myChangeHandler3}>
         <option value="DEFAULT" disabled >Choisir une option</option>
         <option value="1" >Facile</option>
         <option value="2">Moyen</option>
